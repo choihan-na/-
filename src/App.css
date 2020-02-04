@@ -1,29 +1,46 @@
-.App {
-  text-align: center;
-}
+@charset "utf-8";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* search Sectiion - common */
+.visInner {
+    background: #20202E;
+    position: relative;
+    height:220px;
 }
+.visInner h2 {
+    color:#fff;
+    font-size:2.2rem;
+    text-align: center;
+    padding:50px 0 27px;
+}
+.visInner form {
+    width:86.111%;
+    margin:0 auto 50px;
+}
+.visInner input {
+    background:rgba(255,255,255,0.5);
+    border:1px solid #fff;
+    width:100%;
+    padding:10px 0;
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+}
+.visInner input::placeholder {color:#fff;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#content {
+    margin-top:75px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slideWrap {width:975px; overflow:hidden;}
+.slideWrap .slide {
+    width:320px; height:150px;
+    background:#FBE7E6;
+    border-radius: 5px;
+    float:left;
+    margin-right:5px;
+    padding:30px 0 0 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.slideWrap .slide p {
+    font-size:1.4rem;
+    line-height: 2.2rem;
 }
+.slideUp {font-size:1.6rem;}
