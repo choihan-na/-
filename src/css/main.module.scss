@@ -1,10 +1,8 @@
 
-.area {position: absolute;}
-.area_slide {width:auto; overflow:hidden;}
+.area_slide {width:100%; background:red;}
 .area_slide .area_box {
     width:120px; height:80px;
     border-radius:5px;
-    margin-right:5px;
     font-size:1.4rem;
     float:left;
     background: url(../img/lanosia.png) no-repeat center/cover;
@@ -14,15 +12,16 @@
 .area_box:nth-child(3) {background: url(../img/danalran.jpg) no-repeat center/cover ;}
 .area_box:nth-child(4) {background: url(../img/moludona.jpg) no-repeat center/cover ;}
 .area_box:nth-child(5) {background: url(../img/jungang.png) no-repeat center/cover ;}
-
 .area_box:after {
     content:"라노시아";
     position: absolute;
     top:0; left:0;
     width:100%; height:100%;
-    background-image: linear-gradient(166deg,#fff 40%,hsla(0,0%,100%,0) 68%);
-    text-indent:10px;
-    line-height:30px;
+    background-image: 
+    linear-gradient(166deg,#fff 40%,
+    hsla(0,0%,100%,0) 68%);
+    text-align:center;
+    padding-top:10px;
 }
 .area_box:nth-child(2):after {content:"검은장막숲"}
 .area_box:nth-child(3):after {content:"다날린"}

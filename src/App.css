@@ -27,17 +27,23 @@
 }
 .visInner input::placeholder {color:#fff;}
 
-#content {
-    margin-top:75px;
+#content {margin-top:75px;}
+.slideWrap {
+    width:88.888%;
+    margin:auto;
+    position: relative;
+    display:none;
 }
-.slideWrap {width:975px; overflow:hidden;}
 .slideWrap .slide {
-    width:320px; height:150px;
+    width:100%;
     background:#FBE7E6;
     border-radius: 5px;
-    float:left;
-    margin-right:5px;
-    padding:30px 0 0 20px;
+    position: absolute;
+    top:0; left:0;
+    padding:15px 20px;
+}
+.slideWrap .slide:not(:first-child) {
+    display:none;
 }
 .slideWrap .slide p {
     font-size:1.4rem;

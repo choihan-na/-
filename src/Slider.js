@@ -31,11 +31,6 @@ const Slider = () => {
                     </p>
                 </div>
             </div>
-            <ul class="slidebtn pc">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </section>
     )
 }
