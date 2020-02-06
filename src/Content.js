@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
-
 import style from "./css/main.module.scss";
-
 import img1 from "./img/lanosia.png";
 import img2 from "./img/forest.jpg";
 import img3 from "./img/danalran.jpg";
@@ -52,7 +50,7 @@ const Content = () => {
           </form>
           <article class="area">
             <h3 class="hide">지역슬라이드</h3>
-            <SwipeableViews className={style.main_slider}>
+            <SwipeableViews className={style.main_slider} enableMouseEvents>
               <img src={img1} className={style.main_slider_image} />
               <img src={img2} className={style.main_slider_image} />
               <img src={img3} className={style.main_slider_image} />
