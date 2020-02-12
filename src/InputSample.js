@@ -1,53 +1,25 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 
+//input상태 관리하기
 function InputSample() {
-    const [inputs, setInputs] = useState({
-        name:'',
-        nickname:'',
-    });
-    //useRef DOM을 선택해줌
-    const nameInput = useRef();
-    const {name, nickname} = inputs;
+    const [text, setText] = useState('');
 
     const onChange = (e) => {
-        const {name, value} = e.target;
+        setText(e.target.value);
+    }
 
-        setInputs({
-            ...inputs,
-            [name]: value,
-            //불변성을 지켜주는것
-            //위에 ...inpust는 위에 inpust를 복사해옴
-        });
-    };
     const onReset = () => {
-        setInputs({
-            name:'',
-            nickname:'',
-        });
-        nameInput.current.focus();
+        setText('');
     };
     return (
         <div>
-            <input 
-                name="name"
-                placeholder="이름" 
-                onChange={onChange} 
-                value={name} 
-                ref={nameInput}
-            />
-            <input 
-                name="nickname" 
-                placeholder="닉네임" 
-                onChange={onChange} 
-                value={nickname}
-            />
+            <input onChange={onChange} value={text} />
             <button onClick={onReset}>초기화</button>
             <div>
                 <b>값: </b>
-                {name} ({nickname})
+                {text}
             </div>
         </div>
     );
 }
-
-export default InputSample;
+export default InputSample 

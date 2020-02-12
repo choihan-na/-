@@ -1,43 +1,49 @@
-/*
-.area {position: relative;}
-.area:after {
-  position: absolute;
-  content:"";
-  display: block;
-}
-*/
-.main_slider {
-  padding: 0 20vw;
-  height:100px;
-}
 
+.main_slider {
+  height:100px;
+  padding:0 6vw;
+}
+.imgWrap { 
+  position: relative;
+  width:150px; height:80px;
+}
 .main_slider_image {
   width: 150px;
   height:80px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 5px;
   position: relative;
-  background-image:linear-gradient(166deg, #fff 40%, hsla(0, 0%, 100%, 0) 68%);
 }
-.main_slider_image:after {
-  content: "라노시아";
+.imgWrap div {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 10px;
+  width:100%; height:100%;
+  top:0; left:0;
+  border-radius:5px;
+  font-size:1.4rem;
+  padding:10px 0 0 10px;
+  background-image:linear-gradient(166deg,#fff 30%,hsla(0,0%,100%,0) 68%);
 }
-.main_slider_image:nth-child(2):after {
-  content: "검은장막숲";
+.main_slider > div > div {
+  overflow:visible!important;
+  flex-shrink:unset!important;
+  margin-right: 5px;
 }
-.main_slider_image:nth-child(3):after {
-  content: "다날린";
-}
-.main_slider_image:nth-child(4):after {
-  content: "모르도나";
-}
-.main_slider_image:nth-child(5):after {
-  content: "커르다스 중앙고지";
+
+@media screen and (min-width:1280px) {
+  
+  .main_slider {
+    height:100%; width:100%;
+    padding:0;
+  }
+  .imgWrap { 
+    position: relative;
+    width:250px; height:164px;
+  }
+  .main_slider_image {
+    width:250px;
+    height:164px;
+    border-radius:5px;
+    position: relative;
+  }
+  .main_slider > div > div {margin-right: 20px;}
 }

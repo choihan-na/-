@@ -1,25 +1,21 @@
 import React from "react";
-import Header from "./Header";
-import Content from "./Content";
-import Slider from "./Slider";
-import "./Common.css";
-import "./App.css";
 
-import { Button } from "react-bootstrap";
+import Home from "./pages/Home";
+import Area from "./pages/Area";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+  // / -> localhost:3000/
+  // /area -> localhost:3000/area
   return (
-    <div>
-      <div>
-        <Header />
-      </div>
-      <div>
-        <Content />
-      </div>
-      <div>
-        <Slider />
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/area/:id" component={Area} />
+        {/* <Route exact path="/patch_note" component={PatchNote} /> */}
+      </Switch>
+    </Router>
   );
 }
 
