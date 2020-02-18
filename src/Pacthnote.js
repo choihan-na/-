@@ -10,7 +10,7 @@ function Pacthnote() {
                     <caption>글러벌 패치노트</caption>
                     <tr>
                         <td>02.07</td>
-                        <td>5.2 패치ㄴ노트</td>
+                        <td>5.2 패치노트</td>
                     </tr>
                 </table>
             </div>

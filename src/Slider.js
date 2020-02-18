@@ -19,7 +19,7 @@ const Slide = styled('div')`
 `;
 
 const Slider = () => {
-    return(
+    return (
         <section id="content">
             <h2 class="hide">내용</h2>
             <AutoPlaySwipeableViews className="slideWrap">

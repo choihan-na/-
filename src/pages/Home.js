@@ -3,7 +3,7 @@ import Header from "../components/header/Header";
 import Content from "../Content";
 import Slider from "../Slider";
 import Pacthnote from "../Pacthnote";
-import Footer from "../Footer";
+import Footer from "../components/footer/Footer";
 
 import "../Common.css";
 import "../App.css";
