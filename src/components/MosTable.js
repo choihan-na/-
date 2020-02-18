@@ -1,7 +1,9 @@
 import React from 'react';
 
 const MonTable = () => {
-    const [image1, name, field, etc]
+    const [image1, name, field, etc] = monster([{
+        
+    }])
     return (
         <monList>
             <table>

@@ -12,6 +12,7 @@ const Area = ({match}) => {
     return (
         <React.Fragment>
             <h1>{areas[parseInt(match.params.id) - 1]}</h1>
+            <p>Hello {match.params.id}</p>
         </React.Fragment>
     )
 };
