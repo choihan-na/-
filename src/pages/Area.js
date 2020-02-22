@@ -17,17 +17,11 @@ const Area = ({ match }) => {
     return (
         <React.Fragment>
             <div>
-                <Header />
-            </div>
-            <div>
                 <Content />
             </div>
             <div>
                 <h2>{areas[parseInt(match.params.id) - 1]}</h2>
                 <MosTable />
-            </div>
-            <div>
-                <Footer />
             </div>
         </React.Fragment>
     )
